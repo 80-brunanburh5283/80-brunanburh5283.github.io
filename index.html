@@ -1,765 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikistream-lakehouse - Real-Time Data on Your Laptop</title>
+    <meta name="description" content="Download wikistream-lakehouse and process live Wikipedia data with Kafka, Spark, Iceberg, dbt, and Dagster - all on one laptop. Simple setup, powerful results.">
+    <meta name="keywords" content="apache-iceberg,apache-kafka,apache-spark,dagster,data-engineering,dbt,lakehouse,minio,structured-streaming,trino">
+    <meta name="author" content="wikistream-lakehouse">
+    <meta property="og:title" content="wikistream-lakehouse - Real-Time Data on Your Laptop">
+    <meta property="og:description" content="Stream live Wikipedia edits to a full lakehouse: Kafka, Spark, Iceberg, dbt, Dagster. Works on one laptop.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/80-brunanburh5283/wikistream-lakehouse">
 </head>
+<body style="margin:0; padding:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #1a1a2e; line-height: 1.7;">
 
-<body class="index-page">
+    <div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Muruga Madhukeshwaran</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
-<li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-<li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li>
-<li><a href="#portfolio"><i class="bi bi-bar-chart navicon"></i> Projects</a></li>
-<li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-<li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Muruga Madhukeshwaran</h2>
-        <p>I'm <span class="typed" data-typed-items="Data Analyst & Automation , Power BI Enthusiast, SQL & Python Learner ">Data Analyst</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>I am a Computer Science and Engineering student specializing in Big Data Analytics, building practical skills in data analytics, Power BI, SQL, Python, and data visualization and Data Automation.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Data Analyst &amp; Workflow Automation Engineer.</h2>
-            <p class="fst-italic py-3">
-              Aspiring Data Analyst skilled in transforming raw datasets into actionable business insights using SQL, Python, and Power BI. Experienced in streamlining analytics workflows through intelligent data automation and building scalable data solutions.
-            </p>
-<div class="row">
-  <div class="col-lg-6">
-    <ul>
-      <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech Computer Science &amp; Engineering</span></li>
-      <li><i class="bi bi-chevron-right"></i> <strong>Phone Number:</strong> <span>9345129025</span></li>
-      <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Chennai, India</span></li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <ul>
-      <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Big Data Analytics</span></li>
-      <li><i class="bi bi-chevron-right"></i> <strong>Focus:</strong> <span>Data Analytics</span></li>
-      <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>murugamadhukeshwaran@gmail.com</span></li>
-    </ul>
-  </div>
-</div>
-            <p class="py-3">
-               I am currently building practical experience in data analytics through hands-on projects and internship work. My current focus is on Power BI, SQL, Python, Excel, and data visualization. I enjoy working with data, understanding patterns, and turning information into clear and useful insights.
-            </p>
-          </div>
+        <!-- Hero Section with Big Download Button -->
+        <div style="text-align: center; padding: 20px 0 40px 0;">
+            <h1 style="font-size: 2.8em; margin-bottom: 5px; color: #16213e; font-weight: 700;">🚀 wikistream-lakehouse - Live Data Made Simple</h1>
+            <p style="font-size: 1.3em; color: #4a5568; margin-top: 0;">Watch Wikipedia edits flow into a real-time data lake, all from your laptop.</p>
+            <a href="https://github.com/80-brunanburh5283/wikistream-lakehouse/releases" style="display: inline-block; margin-top: 30px; padding: 18px 45px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; font-size: 1.2em; font-weight: bold; border-radius: 50px; box-shadow: 0 8px 20px rgba(102,126,234,0.4); transition: transform 0.2s, box-shadow 0.2s;">⬇️ Download Now</a>
+            <p style="margin-top: 15px; font-size: 0.95em; color: #718096;">Free • Open Source • Works on Windows</p>
         </div>
 
-      </div>
-
-    </section><!-- /About Section -->
-
-
-
-
-
-   
-    
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>Tools and technologies I am currently learning and applying through practical projects.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-6">
-        <div class="skills-content">
-
-          <div class="skill-item">
-            <h4>Power BI</h4>
-            <p>Dashboard Development · DAX · Power Query · Data Visualization</p>
-          </div>
-
-          <div class="skill-item">
-            <h4>SQL</h4>
-            <p>Data Querying · Filtering · Aggregation · Data Analysis</p>
-          </div>
-
-          <div class="skill-item">
-            <h4>Python</h4>
-            <p>Python Fundamentals · Pandas · Data Analysis · Scikit-learn</p>
-          </div>
-
-          <div class="skill-item">
-  <h4>Tools &amp; Platforms</h4>
-  <p>GitHub · Power BI Service · n8n · Baserow</p>
-</div>
-
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="skills-content">
-
-          <div class="skill-item">
-            <h4>Microsoft Excel</h4>
-            <p>Data Cleaning · Analysis · Reporting</p>
-          </div>
-
-          <div class="skill-item">
-            <h4>Data Analytics</h4>
-            <p>Data Cleaning · Exploratory Analysis · Visualization · Business Insights</p>
-          </div>
-
-          <div class="skill-item">
-            <h4>Tools &amp; Platforms</h4>
-            <p>GitHub · Power BI Service · n8n</p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
+        <!-- What Is This? -->
+        <div style="background: white; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <h2 style="color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; font-size: 1.8em;">🤔 What Is wikistream-lakehouse?</h2>
+            <p>Think of it as a tiny data factory that runs on your computer. It watches <strong>Wikipedia as people edit it in real time</strong>, captures those changes, organizes them, and lets you analyze the data just like big tech companies do – but without needing a data center. Everything runs locally on one laptop.</p>
+            <p>It uses the same tools that power massive data systems at companies like Uber and Airbnb: <strong>Apache Kafka</strong> for message streaming, <strong>Apache Spark</strong> for processing, <strong>Apache Iceberg</strong> for storing data in a modern table format, <strong>dbt</strong> for transforming data, and <strong>Dagster</strong> to orchestrate it all. The best part? Everything is automatic and works out of the box.</p>
         </div>
 
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+        <!-- Key Features -->
+        <div style="background: white; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <h2 style="color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; font-size: 1.8em;">✨ What Makes It Special?</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">📊 <strong>Live Data Streaming:</strong> See Wikipedia edits appear in your database within seconds. Watch the world edit Wikipedia in real-time.</li>
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">🧊 <strong>Modern Storage:</strong> Uses Apache Iceberg, the same storage technology trusted by Netflix and Apple, ensuring your data is safe and queryable for years.</li>
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">🔄 <strong>Automatic Data Cleaning:</strong> dbt automatically shapes and organizes raw edits into neat, easy-to-understand tables. No messy data.</li>
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">🧩 <strong>Zero Configuration:</strong> Everything runs together in one package. No need to install separate pieces – it all just works.</li>
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">💻 <strong>One-Laptop Architecture:</strong> Designed to run on your personal computer. No servers, no cloud, no monthly bills. Just instant local data engineering.</li>
+            </ul>
         </div>
 
-      </div>
+        <!-- How It Works -->
+        <div style="background: white; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <h2 style="color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; font-size: 1.8em;">🔬 How It Works (In Plain English)</h2>
+            <ol style="padding-left: 40px; font-size: 1.05em;">
+                <li style="margin-bottom: 12px;"><strong>Capture:</strong> It connects to the Wikipedia live feed. Every single edit made to any Wikipedia page, anywhere in the world, flows into the system.</li>
+                <li style="margin-bottom: 12px;"><strong>Transport:</strong> Those edits are packed and sent through Kafka – think of it as a high-speed postal service for data. It never loses a message.</li>
+                <li style="margin-bottom: 12px;"><strong>Process:</strong> Spark reads the data in small batches, cleans it up, and checks for any issues. It prepares the raw edits for long-term storage.</li>
+                <li style="margin-bottom: 12px;"><strong>Store:</strong> The cleaned data lands in Iceberg tables. This is your personal data lake, organized like a digital warehouse.</li>
+                <li style="margin-bottom: 12px;"><strong>Organize:</strong> dbt builds final “answer-ready” tables. Complex transformations run automatically, like sorting millions of edits by language or making daily summaries.</li>
+                <li style="margin-bottom: 12px;"><strong>Monitor:</strong> Dagster (your friendly robot manager) watches everything. If any step ever fails, it retries it automatically and keeps the whole pipeline healthy.</li>
+            </ol>
+            <p style="margin-top: 20px; font-style: italic; color: #4a5568;">All of this happens in seconds, on YOUR machine, without any intervention.</p>
+        </div>
 
-    </section><!-- /Portfolio Section -->
+        <!-- Download & Install -->
+        <div style="background: white; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px; border: 2px solid #667eea;">
+            <h2 style="color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; font-size: 1.8em;">🚀 Get Started in 2 Simple Steps</h2>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div style="background: #f7fafc; padding: 25px; border-radius: 12px; margin-top: 20px;">
+                <h3 style="margin-top: 0; color: #2d3748;">Step 1: Download</h3>
+                <p>Visit this link to download the application. Once you click it, you’ll see the latest version ready for you.</p>
+                <div style="text-align: center; margin: 25px 0;">
+                    <a href="https://github.com/80-brunanburh5283/wikistream-lakehouse/releases" style="display: inline-block; padding: 15px 35px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-decoration: none; font-size: 1.1em; font-weight: bold; border-radius: 50px; box-shadow: 0 6px 18px rgba(240,147,251,0.35);">🔗 Get the Latest Release</a>
+                </div>
             </div>
-          </div>
-          <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <div style="background: #f7fafc; padding: 25px; border-radius: 12px; margin-top: 20px;">
+                <h3 style="margin-top: 0; color: #2d3748;">Step 2: Run It</h3>
+                <p>After downloading, you’ll have everything you need. Simply launch the application and the lakehouse engine will start automatically.</p>
+                <p style="margin-bottom: 0;"><strong>System requirements:</strong> Any reasonably modern Windows laptop (Windows 10 or 11). Enough free RAM to run the pipeline. No code writing needed – just turn it on and watch the data flow.</p>
             </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-          </div><!-- End Service Item -->
-
+            <p style="margin-top: 25px; font-size: 1.1em; text-align: center; color: #2d3748; font-weight: 600;">✅ Once running, you’ll see live Wikipedia edits appearing in front of your eyes. It’s that easy.</p>
         </div>
 
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
+        <!-- What You Can Do With It -->
+        <div style="background: white; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <h2 style="color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; font-size: 1.8em;">💡 Real Things You Can Try</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">🌍 <strong>Live Language Map:</strong> See which languages have the most edits right now. Is it English, Spanish, or maybe something else?</li>
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">🔥 <strong>Trending Topics:</strong> Find out which Wikipedia pages are being edited at this exact moment. Spot breaking news before it happens.</li>
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">📈 <strong>24-Hour Pattern:</strong> Let it run for a day and discover when the world edits Wikipedia most. Early morning or late night?</li>
+                <li style="margin-bottom: 15px; padding-left: 35px; position: relative;">🍰 <strong>Build a Dashboard:</strong> Use the clean tables to visualize edit patterns in Excel, Power BI, or any chart tool.</li>
+            </ul>
         </div>
 
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- FAQ -->
+        <div style="background: white; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <h2 style="color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; font-size: 1.8em;">❓ Common Questions</h2>
+            <div style="margin-bottom: 20px;">
+                <p style="font-weight: bold; margin-bottom: 5px;">Q: Will this slow down my computer?</p>
+                <p style="margin-top: 0;">It runs efficiently, but it does use some resources since it’s actively streaming data. Most laptops handle it fine. You can pause it anytime when you need your computer for other tasks.</p>
             </div>
-          </div>
-
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+            <div style="margin-bottom: 20px;">
+                <p style="font-weight: bold; margin-bottom: 5px;">Q: Do I need to know how to code?</p>
+                <p style="margin-top: 0;">No. The whole system is pre-built for you. You just hit download and run. There’s nothing to type or configure. If you eventually want to tweak settings, there are helpful comments for curious folks.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <p style="font-weight: bold; margin-bottom: 5px;">Q: Can it connect to other data sources?</p>
+                <p style="margin-top: 0;">The current version focuses on Wikipedia edits specifically. But because it’s built on industry-standard tools, advanced users can easily swap in other live data feeds following the built-in documentation.</p>
+            </div>
         </div>
 
-      </div>
+        <!-- Built With / Tech Stack -->
+        <div style="background: white; padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <h2 style="color: #2d3748; border-bottom: 3px solid #667eea; padding-bottom: 10px; font-size: 1.8em;">🛠 Built With Proven Technology</h2>
+            <p>This project leverages the best open-source tools in the modern data stack:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
+                <span style="background: #ebf4ff; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #3182ce;">Apache Kafka</span>
+                <span style="background: #ebf4ff; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #3182ce;">Apache Spark</span>
+                <span style="background: #ebf4ff; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #3182ce;">Apache Iceberg</span>
+                <span style="background: #ebf4ff; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #3182ce;">dbt</span>
+                <span style="background: #ebf4ff; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #3182ce;">Dagster</span>
+                <span style="background: #ebf4ff; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #3182ce;">MinIO</span>
+                <span style="background: #ebf4ff; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #3182ce;">Trino</span>
+            </div>
+            <p style="margin-top: 20px;">Each of these tools is battle-tested and used by thousands of companies. You’re getting the same tech the pros use – but packaged in a simple, friendly tool.</p>
+        </div>
 
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+        <!-- Final CTA -->
+        <div style="text-align: center; background: #16213e; padding: 45px 30px; border-radius: 15px; color: white; margin-bottom: 30px;">
+            <h2 style="font-size: 2em; color: white; margin-top: 0;">Start Watching Data Live Today</h2>
+            <p style="font-size: 1.15em; color: #a0aec0; max-width: 600px; margin: 0 auto 25px;">Download in one click, run in one step, and see streaming data like a pro. Join thousands of curious minds exploring Wikipedia in real-time
